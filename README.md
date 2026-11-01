@@ -8,7 +8,7 @@ Site institucional estático em HTML, CSS e JavaScript. O conteúdo segue `CONTE
 python3 -m http.server 8000 --bind 0.0.0.0
 ```
 
-Não há build, backend ou dependências em produção. Os caminhos relativos preservam a compatibilidade com a hospedagem estática existente. Fontes e imagens são servidas pelo próprio site.
+Não há build, backend ou dependências em produção. Os caminhos relativos preservam a compatibilidade com a hospedagem estática existente. Fontes e logomarca são servidas pelo próprio site; a foto ilustrativa principal é carregada do Unsplash.
 
 ## Verificação em navegador
 
@@ -25,8 +25,8 @@ As verificações cobrem cinco larguras (320–1440 px), overflow horizontal, ca
 
 ## Conteúdo e recursos
 
-- As duas imagens de cafeteria e recepção foram geradas para ilustrar aplicações de mídia indoor; não são fotografias de clientes, instalações ou pontos reais da rede.
-- A logomarca original citada no briefing não está no checkout. A assinatura tipográfica usada na interface é provisória e deve ser validada pela empresa.
+- A imagem principal de academia é uma fotografia ilustrativa do Unsplash (URL registrada em `index.html`). Não representa cliente, instalação ou ponto real da rede.
+- A logomarca oficial fornecida foi incorporada em `assets/hexmidia-logo.webp` (versão compacta para web). As imagens antigas continuam no repositório, mas não são exibidas.
 - Fontes DM Sans e Manrope: Google Fonts, distribuídas sob SIL Open Font License; licenças em `assets/fonts/`.
 - O formulário prepara e copia um texto no navegador, sem transmissão ou armazenamento em servidor. A demonstração permanece identificada até validação do conteúdo e configuração de um canal oficial.
 
