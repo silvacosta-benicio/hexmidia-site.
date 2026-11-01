@@ -1,154 +1,581 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#081a3d" />
-  <meta name="description" content="A Hexmídia transforma telas em oportunidades. Soluções de mídia indoor, publicidade digital e comunicação institucional para empresas e órgãos públicos." />
-  <meta property="og:title" content="Hexmídia | Sua marca em mídia indoor" />
-  <meta property="og:description" content="Comunicação digital que conecta marcas, negócios e pessoas." />
-  <meta property="og:type" content="website" />
-  <title>Hexmídia — Sua marca em mídia indoor</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <script src="script.js" defer></script>
-</head>
-<body>
-  <svg class="svg-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
-    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
-    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
-    <symbol id="i-display" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></symbol>
-    <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M3 11v2a2 2 0 0 0 2 2h2l2 5h3l-2-5 9-4V6L7 10H5a2 2 0 0 0-2 1Z"/><path d="M19 8a3 3 0 0 1 0 6"/></symbol>
-    <symbol id="i-settings" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18m-13 5h8m-8 3h5"/></symbol>
-    <symbol id="i-tool" viewBox="0 0 24 24"><path d="M14.5 6.5a5 5 0 0 0-6.1 6.3L3 17.7 6.3 21l5.4-5.4a5 5 0 0 0 6.3-6.1l-4 4-3.5-3.5 4-3.5Z"/></symbol>
-    <symbol id="i-building" viewBox="0 0 24 24"><path d="M3 21h18M5 21V5l7-3 7 3v16M9 8h1m4 0h1M9 12h1m4 0h1M9 16h1m4 0h1"/></symbol>
-    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 5 5L20 7"/></symbol>
-    <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
-    <symbol id="i-spark" viewBox="0 0 24 24"><path d="m12 2 2.7 7.3L22 12l-7.3 2.7L12 22l-2.7-7.3L2 12l7.3-2.7L12 2Z"/></symbol>
-    <symbol id="i-handshake" viewBox="0 0 24 24"><path d="m2 8 5-4 5 2 4-2 6 4-5 8-5 4-3-2-3-4-4-6Z"/><path d="m7 11 4-3 3 2 4-1m-7 9 3-3m-6 1 3-3"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></symbol>
-    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m13 2-9 11h7l-1 9 10-12h-7l0-8Z"/></symbol>
-    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.5 8.5 8 11 4.5-2.5 8-6 8-11V5l-8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
-    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20v-2a6 6 0 0 1 12 0v2H3ZM17 5a3 3 0 0 1 0 6m1 3a5 5 0 0 1 3 5v1h-4"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></symbol>
-    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
-  </svg>
-
-  <div class="demo-notice" role="note">SITE DEMONSTRATIVO <span>•</span> Conteúdo e canais de contato sujeitos à validação da Hexmídia</div>
-
-  <header class="site-header" id="inicio">
-    <div class="container header-inner">
-      <a href="#inicio" class="brand" aria-label="Hexmídia, voltar ao início">
-        <span class="brand-icon"><svg><use href="#i-play"/></svg></span>
-        <span class="brand-type"><strong>HEX</strong><b>MÍDIA</b></span>
-      </a>
-      <nav class="desktop-nav" aria-label="Navegação principal">
-        <a href="#sobre">Quem somos</a><a href="#solucoes">Soluções</a><a href="#segmentos">Onde atuamos</a><a href="#institucional">Setor público</a>
-      </nav>
-      <a class="button button-nav" href="#contato">Vamos conversar <svg><use href="#i-arrow-up"/></svg></a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101e30" />
+    <meta
+      name="description"
+      content="Hexmídia: mídia indoor, publicidade digital e comunicação institucional. Conectamos marcas e pessoas nos espaços do dia a dia."
+    />
+    <meta property="og:title" content="Hexmídia — Sua marca em mídia indoor" />
+    <meta
+      property="og:description"
+      content="Presença no lugar certo. Conexões no mundo real."
+    />
+    <meta property="og:type" content="website" />
+    <title>Hexmídia — Presença no lugar certo.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#principal">Pular para o conteúdo</a>
+    <div class="demo-bar">
+      UMA VISÃO DO QUE PODEMOS CONSTRUIR <span>• Site demonstrativo</span>
     </div>
-    <nav class="mobile-nav" id="mobile-nav" aria-label="Navegação móvel" hidden>
-      <a href="#sobre">Quem somos</a><a href="#solucoes">Soluções</a><a href="#segmentos">Onde atuamos</a><a href="#institucional">Setor público</a><a href="#contato">Fale conosco</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> SUA MARCA EM MÍDIA INDOOR</div>
-          <h1 id="hero-title">Sua marca ganha <em>presença</em> onde as pessoas estão.</h1>
-          <p>Transformamos telas em canais de comunicação que conectam empresas, instituições e pessoas nos ambientes do dia a dia.</p>
-          <div class="hero-actions">
-            <a href="#solucoes" class="button button-primary">Conheça nossas soluções <svg><use href="#i-arrow-up"/></svg></a>
-            <a href="#como-funciona" class="text-link">Como funciona <svg><use href="#i-arrow"/></svg></a>
+    <header class="header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#inicio" aria-label="Hexmídia, início"
+          ><span class="brand-symbol" aria-hidden="true">h<span>↗</span></span
+          ><span
+            >hex<span>mídia</span><small>SUA MARCA EM MÍDIA INDOOR</small></span
+          ></a
+        >
+        <nav id="navigation" aria-label="Navegação principal">
+          <a href="#sobre">A Hexmídia</a><a href="#solucoes">Soluções</a
+          ><a href="#ambientes">Onde estamos presentes</a
+          ><a class="nav-contact" href="#contato"
+            >Vamos conversar <span>↗</span></a
+          >
+        </nav>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="navigation"
+          aria-label="Abrir menu"
+        >
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <main id="principal">
+      <section class="hero" id="inicio">
+        <div class="wrap hero-top">
+          <div class="hero-heading">
+            <p class="eyebrow">
+              <span class="dot"></span> CONEXÕES NO MUNDO REAL
+            </p>
+            <h1>
+              Sua marca.<br />No lugar <em>certo.</em
+              ><span class="hero-asterisk" aria-hidden="true"
+                ><svg
+                  class="asterisk-icon"
+                  viewBox="0 0 100 100"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="9"
+                  aria-hidden="true"
+                >
+                  <path d="M50 5v90M5 50h90M18 18l64 64M18 82l64-64" /></svg
+              ></span>
+            </h1>
           </div>
-          <div class="hero-caption"><span class="caption-icon"><svg><use href="#i-display"/></svg></span><span>Tecnologia, comunicação<br/>e novas oportunidades.</span></div>
+          <div class="hero-intro">
+            <p>
+              Transformamos telas em pontos de encontro entre a sua marca e as
+              pessoas.
+            </p>
+            <p class="subtle">
+              Mídia indoor, tecnologia e comunicação.<br />Dentro da rotina.
+              Além do óbvio.
+            </p>
+            <a class="button orange" href="#solucoes"
+              >Explore as possibilidades <span>↗</span></a
+            >
+          </div>
         </div>
-        <div class="hero-art" aria-label="Ilustração de mídia publicitária em uma tela digital">
-          <div class="art-orbit art-orbit-1"></div><div class="art-orbit art-orbit-2"></div>
-          <div class="floating-tag tag-top"><span class="tag-dot"></span> Comunicação em movimento</div>
-          <div class="display-unit">
-            <div class="display-screen">
-              <div class="screen-topline"><span class="screen-logo"><span class="screen-mini-play">▶</span> HEX<span>MÍDIA</span></span><span class="screen-live"><i></i> MÍDIA INDOOR</span></div>
-              <div class="screen-graphic"><div class="screen-disc disc-a"></div><div class="screen-disc disc-b"></div><div class="screen-ring"></div>
-                <span class="screen-kicker">O PRÓXIMO DESTAQUE</span><div class="screen-headline">Pode ser<br/><i>a sua marca.</i></div>
-                <div class="screen-small">Sua mensagem no ambiente certo.</div>
+        <div class="wrap">
+          <figure class="hero-scene">
+            <img
+              src="assets/indoor-cafe.webp"
+              alt="Conceito ilustrativo de um display digital Hexmídia em uma cafeteria contemporânea"
+              fetchpriority="high"
+              width="1536"
+              height="1024"
+            />
+            <div class="scene-shade"></div>
+            <div class="scene-caption">
+              <span><i class="dot"></i> O COTIDIANO É O SEU PRÓXIMO CANAL.</span
+              ><span>CAFETERIAS & ESPAÇOS DE CONVIVÊNCIA</span>
+            </div>
+            <figcaption>
+              Visualização ilustrativa de aplicação • Não representa um cliente
+              ou ponto da rede.
+            </figcaption>
+          </figure>
+        </div>
+        <div class="wrap hero-bottom">
+          <span>PUBLICIDADE QUE FAZ PARTE DO AMBIENTE.</span
+          ><a href="#sobre">Conheça a Hexmídia <span>↓</span></a>
+        </div>
+      </section>
+      <div class="ticker" aria-label="Tecnologia, presença, conexão">
+        <div>
+          TECNOLOGIA
+          <span
+            ><svg
+              class="asterisk-icon"
+              viewBox="0 0 100 100"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="9"
+              aria-hidden="true"
+            >
+              <path d="M50 5v90M5 50h90M18 18l64 64M18 82l64-64" /></svg
+          ></span>
+          PRESENÇA
+          <span
+            ><svg
+              class="asterisk-icon"
+              viewBox="0 0 100 100"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="9"
+              aria-hidden="true"
+            >
+              <path d="M50 5v90M5 50h90M18 18l64 64M18 82l64-64" /></svg
+          ></span>
+          CONEXÃO
+          <span
+            ><svg
+              class="asterisk-icon"
+              viewBox="0 0 100 100"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="9"
+              aria-hidden="true"
+            >
+              <path d="M50 5v90M5 50h90M18 18l64 64M18 82l64-64" /></svg
+          ></span>
+          MÍDIA INDOOR
+          <span
+            ><svg
+              class="asterisk-icon"
+              viewBox="0 0 100 100"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="9"
+              aria-hidden="true"
+            >
+              <path d="M50 5v90M5 50h90M18 18l64 64M18 82l64-64" /></svg
+          ></span>
+        </div>
+      </div>
+      <section class="section about wrap" id="sobre">
+        <div class="section-side">
+          <p class="eyebrow dark">01 / A HEXMÍDIA</p>
+          <span class="little-mark" aria-hidden="true">h↗</span>
+        </div>
+        <div class="about-content">
+          <h2>
+            O digital chama atenção.<br /><span class="muted"
+              >A presença cria</span
+            >
+            conexão.
+          </h2>
+          <div class="about-columns">
+            <p>
+              Nascemos em 2024 com uma ideia: transformar espaços do dia a dia
+              em oportunidades de comunicação. Conectamos marcas e pessoas por
+              meio de telas em ambientes comerciais e institucionais.
+            </p>
+            <p>
+              Enquanto alguém espera, circula ou faz uma pausa, uma nova
+              história pode acontecer. Levamos publicidade e informação a esses
+              momentos, com tecnologia, criatividade e propósito.
+            </p>
+          </div>
+          <a class="line-link" href="#essencia"
+            >Conheça o que nos move <span>↗</span></a
+          >
+        </div>
+      </section>
+      <section class="solutions section" id="solucoes">
+        <div class="wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 / POSSIBILIDADES</p>
+              <h2>
+                Da tela à estratégia.<br /><span class="muted"
+                  >Tudo se conecta.</span
+                >
+              </h2>
+            </div>
+            <p>
+              Para marcas que querem aparecer.<br />Para espaços que querem
+              comunicar.<br />Para ideias que merecem circular.
+            </p>
+          </div>
+          <div class="services">
+            <a class="service" href="#contato"
+              ><span class="service-number">01</span>
+              <h3>Publicidade digital</h3>
+              <p>
+                Sua marca, seus produtos e suas campanhas em telas que fazem
+                parte do cotidiano.
+              </p>
+              <span class="service-arrow">↗</span></a
+            ><a class="service" href="#contato"
+              ><span class="service-number">02</span>
+              <h3>Instalação & locação</h3>
+              <p>
+                Equipamentos e soluções de exibição pensados para cada espaço e
+                necessidade.
+              </p>
+              <span class="service-arrow">↗</span></a
+            ><a class="service" href="#contato"
+              ><span class="service-number">03</span>
+              <h3>Gestão de conteúdo</h3>
+              <p>
+                Organização e programação de anúncios, vídeos e comunicados para
+                suas telas.
+              </p>
+              <span class="service-arrow">↗</span></a
+            ><a class="service" href="#contato"
+              ><span class="service-number">04</span>
+              <h3>Suporte & manutenção</h3>
+              <p>
+                Acompanhamento técnico de equipamentos e sistemas conforme o
+                serviço contratado.
+              </p>
+              <span class="service-arrow">↗</span></a
+            ><a class="service" href="#institucional"
+              ><span class="service-number">05</span>
+              <h3>Projetos institucionais</h3>
+              <p>
+                Comunicação digital para empresas, prefeituras e espaços de
+                atendimento público.
+              </p>
+              <span class="service-arrow">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="section environments wrap" id="ambientes">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark">03 / O MUNDO É O CONTEXTO</p>
+            <h2>Onde a vida acontece,<br />a sua marca <em>aparece.</em></h2>
+          </div>
+          <p>
+            O ambiente certo aproxima a mensagem<br />das pessoas certas.
+            Explore possibilidades<br />de aplicação para diferentes rotinas.
+          </p>
+        </div>
+        <div class="environment-layout">
+          <div class="environment-visual">
+            <img
+              class="environment-photo"
+              src="assets/indoor-reception.webp"
+              alt="Conceito ilustrativo de uma tela digital Hexmídia em uma recepção contemporânea"
+              width="1024"
+              height="1536"
+              loading="lazy"
+              decoding="async"
+            />
+            <span class="visual-note"
+              >Visualização ilustrativa / Não representa um cliente da
+              rede</span
+            >
+          </div>
+          <div class="environment-list">
+            <article>
+              <span>01</span>
+              <div>
+                <h3>Consumo & convivência</h3>
+                <p>
+                  Mercados, lojas, centros comerciais, restaurantes, lanchonetes
+                  e cafeterias.
+                </p>
               </div>
-              <div class="screen-footer"><span>COMUNICAÇÃO QUE CONECTA</span><span class="screen-footer-arrows">↗ ↗ ↗</span></div>
-            </div><div class="display-stand"></div><div class="display-foot"></div>
+            </article>
+            <article>
+              <span>02</span>
+              <div>
+                <h3>Cuidado & bem-estar</h3>
+                <p>
+                  Clínicas, unidades de saúde, academias, salões e barbearias.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span>03</span>
+              <div>
+                <h3>Espera & encontro</h3>
+                <p>
+                  Condomínios, recepções e salas de espera. Transforme a pausa
+                  em informação.
+                </p>
+              </div>
+            </article>
+            <article>
+              <span>04</span>
+              <div>
+                <h3>Serviço & cidadania</h3>
+                <p>
+                  Órgãos públicos, CRAS, CREAS, centros administrativos e
+                  mercados públicos.
+                </p>
+              </div>
+            </article>
+            <p class="fine-print">
+              Aplicações possíveis, sujeitas à disponibilidade da rede e às
+              condições de cada projeto.
+            </p>
           </div>
-          <div class="floating-tag tag-bottom"><span class="tag-icon"><svg><use href="#i-target"/></svg></span><span>Visibilidade estratégica<small>Dentro do cotidiano das pessoas</small></span></div>
-          <div class="art-pixels"></div>
+        </div>
+      </section>
+      <section class="process section">
+        <div class="wrap">
+          <p class="eyebrow dark">UMA IDEIA SIMPLES. UMA PRESENÇA DIFERENTE.</p>
+          <h2>Sua mensagem encontra<br />um novo caminho.</h2>
+          <div class="process-grid">
+            <article>
+              <span>01 / ENTENDER</span>
+              <h3>O seu objetivo.</h3>
+              <p>Conhecemos a marca, o público e o que você quer comunicar.</p>
+            </article>
+            <article>
+              <span>02 / CONECTAR</span>
+              <h3>O contexto certo.</h3>
+              <p>
+                Planejamos formatos e possibilidades de exibição alinhados ao
+                projeto.
+              </p>
+            </article>
+            <article>
+              <span>03 / COMUNICAR</span>
+              <h3>A presença real.</h3>
+              <p>
+                Vídeos, campanhas e informações ganham espaço na rotina das
+                pessoas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="public section" id="institucional">
+        <div class="wrap public-grid">
+          <div>
+            <p class="eyebrow">COMUNICAÇÃO QUE SERVE ÀS PESSOAS</p>
+            <h2>
+              Informação pública.<br />Mais próxima<br /><em>de todos.</em>
+            </h2>
+            <p>
+              Tecnologia para organizar informações de interesse coletivo e
+              aproximar instituições da população.
+            </p>
+            <a class="button light" href="#contato"
+              >Vamos pensar no seu projeto <span>↗</span></a
+            >
+          </div>
+          <div class="public-topics">
+            <span class="public-symbol" aria-hidden="true">↗</span>
+            <h3>Um canal para o que importa.</h3>
+            <ul>
+              <li>Campanhas de saúde e vacinação</li>
+              <li>Serviços e programas municipais</li>
+              <li>Educação ambiental e cidadania</li>
+              <li>Orientações e comunicados institucionais</li>
+            </ul>
+            <p class="fine-print">
+              Instalação, locação, gestão e suporte conforme especificações e
+              condições de cada contratação.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section essence wrap" id="essencia">
+        <p class="eyebrow dark">04 / NOSSA ESSÊNCIA</p>
+        <h2>
+          Inovação com propósito.<br /><span class="muted"
+            >Conexões com responsabilidade.</span
+          >
+        </h2>
+        <div class="essence-grid">
+          <article>
+            <span>O QUE NOS MOVE</span>
+            <h3>Conectar.</h3>
+            <p>
+              Aproximar marcas, empresas e instituições de seu público com
+              comunicação digital acessível, dinâmica e eficiente.
+            </p>
+          </article>
+          <article>
+            <span>PARA ONDE OLHAMOS</span>
+            <h3>Evoluir.</h3>
+            <p>
+              Ser referência em mídia indoor, ampliando nossa rede de telas e
+              desenvolvendo soluções para o mercado publicitário e
+              institucional.
+            </p>
+          </article>
+          <article>
+            <span>COMO CONSTRUÍMOS</span>
+            <h3>Com confiança.</h3>
+            <p>
+              Ética, transparência, criatividade e qualidade. Compromisso com
+              cada cliente, responsabilidade e parcerias duradouras.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="faq section">
+        <div class="wrap faq-grid">
+          <div>
+            <p class="eyebrow dark">ANTES DE COMEÇAR</p>
+            <h2>Boas perguntas.<br />Novas perspectivas.</h2>
+          </div>
+          <div>
+            <details>
+              <summary>O que é mídia indoor?<span>+</span></summary>
+              <p>
+                É a comunicação digital em ambientes internos, por meio de telas
+                que exibem anúncios, vídeos e informações. Uma forma de
+                complementar outros canais e estar presente no cotidiano do
+                público.
+              </p>
+            </details>
+            <details>
+              <summary>O que pode aparecer nas telas?<span>+</span></summary>
+              <p>
+                Campanhas promocionais, vídeos institucionais, ofertas, avisos e
+                conteúdos informativos, conforme os formatos e as regras de cada
+                projeto.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Posso escolher os locais de exibição?<span>+</span>
+              </summary>
+              <p>
+                O planejamento pode considerar o perfil do público, os objetivos
+                da campanha e a disponibilidade dos pontos da rede.
+              </p>
+            </details>
+            <details>
+              <summary>
+                Meu estabelecimento pode ser parceiro?<span>+</span>
+              </summary>
+              <p>
+                Podemos estudar soluções para o seu espaço. Instalação, locação,
+                gestão de conteúdo e suporte dependem das necessidades e
+                condições de cada projeto.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+      <section class="contact section" id="contato">
+        <div class="wrap contact-grid">
+          <div>
+            <p class="eyebrow">O PRÓXIMO PASSO É UMA CONVERSA</p>
+            <h2>
+              Vamos colocar<br />a sua marca<br /><em>em movimento?</em
+              ><span aria-hidden="true">↗</span>
+            </h2>
+            <p>
+              Conte a sua ideia. Vamos imaginar<br />as possibilidades juntos.
+            </p>
+            <div class="contact-note">
+              <span class="dot"></span>
+              <p>
+                Estamos preparando os canais oficiais.<br />Por enquanto,
+                prepare e copie sua mensagem.<br />Nenhum dado é enviado por
+                este formulário.
+              </p>
+            </div>
+          </div>
+          <form id="contact-form">
+            <div class="form-heading">
+              <span>UM POUCO SOBRE O SEU PROJETO</span><span>01—04</span>
+            </div>
+            <label for="name">Seu nome <span>*</span></label
+            ><input
+              id="name"
+              name="name"
+              autocomplete="name"
+              placeholder="Como podemos chamar você?"
+              required
+              maxlength="100"
+            /><label for="company">Empresa / instituição</label
+            ><input
+              id="company"
+              name="company"
+              autocomplete="organization"
+              placeholder="Qual é a sua organização?"
+              maxlength="120"
+            /><label for="interest"
+              >O que você tem em mente? <span>*</span></label
+            ><select id="interest" name="interest" required>
+              <option value="" disabled selected>
+                Selecione uma possibilidade
+              </option>
+              <option>Anunciar na rede Hexmídia</option>
+              <option>Instalar ou locar telas</option>
+              <option>Ser um estabelecimento parceiro</option>
+              <option>Projeto institucional ou público</option>
+              <option>Outro assunto</option></select
+            ><label for="message">Sua ideia</label
+            ><textarea
+              id="message"
+              name="message"
+              rows="3"
+              maxlength="1200"
+              placeholder="Conte um pouco sobre o projeto..."
+            ></textarea
+            ><button class="button orange" type="submit">
+              Preparar minha mensagem <span>↗</span>
+            </button>
+            <p class="fine-print">
+              * Campos obrigatórios. Demonstração: não realiza envio.
+            </p>
+            <div id="contact-result" hidden>
+              <h3>Sua mensagem está pronta.</h3>
+              <p>
+                Copie e guarde o texto. O canal oficial de envio ainda não está
+                disponível.
+              </p>
+              <textarea
+                id="message-preview"
+                readonly
+                aria-label="Mensagem preparada"
+                rows="7"
+              ></textarea
+              ><button class="line-link" id="copy-message" type="button">
+                Copiar mensagem <span>↗</span>
+              </button>
+              <p id="copy-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap">
+        <div class="footer-top">
+          <a
+            class="brand"
+            href="#inicio"
+            aria-label="Hexmídia, voltar ao início"
+            ><span class="brand-symbol" aria-hidden="true"
+              >h<span>↗</span></span
+            ><span
+              >hex<span>mídia</span
+              ><small>SUA MARCA EM MÍDIA INDOOR</small></span
+            ></a
+          >
+          <p>Tecnologia que aproxima.<br />Comunicação que conecta.</p>
+          <a class="top-link" href="#inicio"
+            >De volta ao início <span>↑</span></a
+          >
+        </div>
+        <div class="footer-bottom">
+          <span>© <span id="year">2026</span> Hexmídia</span
+          ><span>Desde 2024, criando novas conexões.</span
+          ><span>Site demonstrativo • Conteúdo sujeito à validação.</span>
         </div>
       </div>
-      <div class="hero-bottom container"><span>COMUNICAÇÃO ALÉM DO DIGITAL TRADICIONAL</span><span>DESDE 2024 <span class="little-slash">/</span> HEXMÍDIA</span></div>
-    </section>
-
-    <section class="intro section" id="sobre">
-      <div class="container intro-grid">
-        <div class="intro-title"><div class="eyebrow"><span class="eyebrow-line"></span> QUEM SOMOS</div><h2>Mais que telas.<br/><span class="accent">Conexões reais.</span></h2></div>
-        <div class="intro-text"><p>A <strong>Hexmídia</strong> nasceu em 2024 para transformar espaços de circulação e atendimento em oportunidades de comunicação. Conectamos marcas ao público por meio de uma rede de telas instaladas estrategicamente em ambientes comerciais e institucionais.</p><p>Acreditamos em uma publicidade mais acessível, dinâmica e alinhada à rotina das pessoas — uma forma de complementar as estratégias de divulgação de cada negócio.</p><a class="inline-link" href="#identidade">Conheça nossa essência <svg><use href="#i-arrow-up"/></svg></a></div>
-      </div>
-      <div class="container">
-        <div class="feature-strip"><div><svg><use href="#i-display"/></svg><strong>Telas digitais</strong><span>Conteúdos em ambientes físicos</span></div><div><svg><use href="#i-target"/></svg><strong>Exibição estratégica</strong><span>Pontos adequados ao público</span></div><div><svg><use href="#i-spark"/></svg><strong>Conteúdo dinâmico</strong><span>Campanhas, vídeos e avisos</span></div><div><svg><use href="#i-handshake"/></svg><strong>Novas conexões</strong><span>Marcas, pessoas e instituições</span></div></div>
-      </div>
-    </section>
-
-    <section class="how section" id="como-funciona">
-      <div class="container"><div class="section-heading center"><div class="eyebrow eyebrow-center"><span class="eyebrow-line"></span> MÍDIA INDOOR, NA PRÁTICA</div><h2>Uma ideia simples.<br/>Um novo jeito de <span class="accent">ser visto.</span></h2><p>A publicidade se encontra com o público onde ele já está.</p></div>
-        <div class="steps">
-          <article class="step"><div class="step-number">01 <span></span></div><div class="step-icon"><svg><use href="#i-pin"/></svg></div><h3>O ambiente</h3><p>Telas em locais onde as pessoas circulam, aguardam atendimento, consomem ou utilizam serviços.</p></article>
-          <article class="step"><div class="step-number">02 <span></span></div><div class="step-icon"><svg><use href="#i-settings"/></svg></div><h3>O conteúdo</h3><p>Campanhas, anúncios, vídeos e informações organizados conforme as necessidades do projeto.</p></article>
-          <article class="step"><div class="step-number">03 <span></span></div><div class="step-icon"><svg><use href="#i-megaphone"/></svg></div><h3>A conexão</h3><p>Mensagens visuais ganham presença no cotidiano e aproximam anunciantes de potenciais clientes.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="solutions section" id="solucoes">
-      <div class="container"><div class="solutions-top"><div><div class="eyebrow"><span class="eyebrow-line"></span> O QUE FAZEMOS</div><h2>Soluções que vão <span class="accent">além da tela.</span></h2></div><p>Da publicidade à operação de projetos de comunicação digital, desenvolvemos alternativas para diferentes necessidades.</p></div>
-        <div class="solution-grid">
-          <article class="solution-card featured-card"><span class="card-icon"><svg><use href="#i-megaphone"/></svg></span><div class="featured-deco"><div class="deco-screen deco-one"></div><div class="deco-screen deco-two"></div><div class="deco-circle"></div></div><div class="featured-body"><span class="card-index">01 / PUBLICIDADE</span><h3>Publicidade digital para empresas</h3><p>Divulgação de marcas, ofertas, produtos, serviços e campanhas promocionais nas telas da nossa rede.</p></div></article>
-          <article class="solution-card"><span class="card-icon"><svg><use href="#i-display"/></svg></span><span class="card-index">02 / EQUIPAMENTOS</span><h3>Instalação e locação de telas</h3><p>Disponibilização de equipamentos para ambientes e projetos de comunicação digital, conforme cada necessidade.</p></article>
-          <article class="solution-card"><span class="card-icon"><svg><use href="#i-settings"/></svg></span><span class="card-index">03 / GERENCIAMENTO</span><h3>Gestão de conteúdos</h3><p>Organização e programação de anúncios, vídeos e comunicados de acordo com os recursos contratados.</p></article>
-          <article class="solution-card"><span class="card-icon"><svg><use href="#i-tool"/></svg></span><span class="card-index">04 / SUPORTE</span><h3>Suporte técnico e manutenção</h3><p>Acompanhamento dos equipamentos e sistemas, com serviços definidos conforme o plano contratado.</p></article>
-          <article class="solution-card"><span class="card-icon"><svg><use href="#i-building"/></svg></span><span class="card-index">05 / PROJETOS</span><h3>Projetos institucionais</h3><p>Comunicação digital para empresas, órgãos públicos, unidades de atendimento e outros ambientes institucionais.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="sectors section" id="segmentos">
-      <div class="container sectors-grid"><div class="sectors-copy"><div class="eyebrow"><span class="eyebrow-line"></span> ONDE ATUAMOS</div><h2>Onde há pessoas, há espaço para <span class="accent">comunicação.</span></h2><p>Uma solução adaptável a diferentes ambientes, perfis de público e objetivos de divulgação.</p><a href="#contato" class="button button-dark">Explore uma parceria <svg><use href="#i-arrow-up"/></svg></a></div>
-        <div class="sector-list" aria-label="Segmentos atendidos">
-          <div><span>01</span> Clínicas e unidades de saúde <svg><use href="#i-arrow-up"/></svg></div><div><span>02</span> Academias, salões e barbearias <svg><use href="#i-arrow-up"/></svg></div><div><span>03</span> Mercados, lojas e centros comerciais <svg><use href="#i-arrow-up"/></svg></div><div><span>04</span> Restaurantes, lanchonetes e cafeterias <svg><use href="#i-arrow-up"/></svg></div><div><span>05</span> Condomínios, recepções e salas de espera <svg><use href="#i-arrow-up"/></svg></div><div><span>06</span> Órgãos públicos e espaços de atendimento <svg><use href="#i-arrow-up"/></svg></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="why section">
-      <div class="container why-grid"><div class="why-visual"><div class="why-lines"></div><div class="why-chip">SUA MARCA <span>EM EVIDÊNCIA</span></div><div class="why-window"><div class="why-window-top"><span></span><span></span><span></span></div><div class="why-window-body"><div class="why-inset"><span>CONTEÚDO DIGITAL</span><strong>Quem é visto,<br/><i>é lembrado.</i></strong><small>HEXMÍDIA • PUBLICIDADE INDOOR</small></div></div></div><span class="why-bottom-tag">VISIBILIDADE NO MUNDO REAL ↗</span></div>
-        <div class="why-copy"><div class="eyebrow"><span class="eyebrow-line"></span> POR QUE ANUNCIAR?</div><h2>Presença que faz a <span class="accent">diferença.</span></h2><p>Uma alternativa para complementar os canais de divulgação e aproximar sua marca das pessoas.</p><div class="why-benefits"><div><span class="benefit-check"><svg><use href="#i-check"/></svg></span><span><strong>Mais visibilidade</strong><small>Presença em ambientes frequentados por potenciais consumidores.</small></span></div><div><span class="benefit-check"><svg><use href="#i-check"/></svg></span><span><strong>Comunicação atrativa</strong><small>Vídeos, imagens e ofertas em formatos dinâmicos.</small></span></div><div><span class="benefit-check"><svg><use href="#i-check"/></svg></span><span><strong>Divulgação estratégica</strong><small>Possibilidade de selecionar pontos conforme público e campanha.</small></span></div><div><span class="benefit-check"><svg><use href="#i-check"/></svg></span><span><strong>Formatos flexíveis e parcerias</strong><small>Alternativas ajustadas à rede disponível e às condições comerciais.</small></span></div></div></div>
-      </div>
-    </section>
-
-    <section class="public section" id="institucional"><div class="container public-grid"><div class="public-left"><div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> SETOR PÚBLICO & INSTITUIÇÕES</div><h2>Informação que chega mais perto <em>das pessoas.</em></h2><p>Levamos comunicação digital a ambientes públicos e institucionais, contribuindo para a organização de informações de interesse coletivo.</p><a href="#contato" class="button button-primary">Fale sobre seu projeto <svg><use href="#i-arrow-up"/></svg></a></div><div class="public-card"><div class="public-card-heading"><span><svg><use href="#i-building"/></svg></span><strong>Possibilidades de aplicação</strong></div><ul><li>Campanhas de saúde e vacinação</li><li>Informações sobre serviços municipais</li><li>Educação ambiental e cidadania</li><li>Comunicados de utilidade pública</li><li>Orientações em unidades de atendimento</li><li>Conteúdo institucional e administrativo</li></ul><p>Instalação, locação, gestão de conteúdo e suporte conforme as especificações de cada contratação.</p></div></div></section>
-
-    <section class="identity section" id="identidade"><div class="container"><div class="section-heading center"><div class="eyebrow eyebrow-center"><span class="eyebrow-line"></span> NOSSA ESSÊNCIA</div><h2>Tecnologia com <span class="accent">propósito.</span></h2><p>Uma marca construída sobre conexões, criatividade e compromisso.</p></div><div class="identity-grid"><article><div class="identity-marker">01</div><h3>Missão</h3><p>Conectar marcas, empresas e instituições ao seu público com soluções modernas de comunicação digital, tornando publicidade e informação mais acessíveis, dinâmicas e eficientes.</p></article><article><div class="identity-marker">02</div><h3>Visão</h3><p>Ser reconhecida como referência em mídia indoor, ampliando nossa rede de telas e desenvolvendo soluções inovadoras para o mercado publicitário e institucional.</p></article><article><div class="identity-marker">03</div><h3>Valores</h3><p>Inovação, ética, transparência, qualidade, responsabilidade, profissionalismo, parcerias duradouras e compromisso com nossos clientes.</p></article></div>
-        <div class="official-logo"><div><span class="eyebrow">NOSSA IDENTIDADE VISUAL</span><h3>HEX<span>MÍDIA</span></h3><p>Azul-marinho para representar confiança e solidez. Laranja para expressar energia, criatividade e destaque.</p></div><div class="logo-fallback"><strong>HEX</strong><em>MÍDIA</em><small>SUA MARCA EM MÍDIA INDOOR</small></div></div>
-      </div></section>
-
-    <section class="faq section"><div class="container faq-grid"><div><div class="eyebrow"><span class="eyebrow-line"></span> DÚVIDAS FREQUENTES</div><h2>Quer saber <span class="accent">mais?</span></h2><p>Algumas respostas para entender melhor o formato de mídia indoor.</p></div><div class="faq-items"><details><summary>O que pode ser exibido nas telas? <svg><use href="#i-plus"/></svg></summary><p>Vídeos institucionais, anúncios, ofertas, campanhas promocionais, avisos e conteúdos informativos, conforme as características e regras de cada projeto.</p></details><details><summary>É possível escolher os locais de exibição? <svg><use href="#i-plus"/></svg></summary><p>A seleção pode considerar o perfil do público, os objetivos da campanha e a disponibilidade dos pontos da rede.</p></details><details><summary>A Hexmídia também instala equipamentos? <svg><use href="#i-plus"/></svg></summary><p>Sim. A empresa apresenta soluções de instalação e locação de telas, conforme o ambiente e as condições de contratação.</p></details><details><summary>Vocês atendem órgãos públicos? <svg><use href="#i-plus"/></svg></summary><p>A Hexmídia propõe projetos para instituições e órgãos públicos, sujeitos às especificações técnicas e às condições de cada contratação.</p></details></div></div></section>
-
-    <section class="contact section" id="contato"><div class="container contact-grid"><div class="contact-text"><div class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> VAMOS CONVERSAR?</div><h2>Sua próxima oportunidade começa <em>aqui.</em></h2><p>Quer anunciar, receber uma proposta ou conhecer as possibilidades para seu estabelecimento ou instituição?</p><div class="contact-note"><svg><use href="#i-spark"/></svg><span><strong>Estamos preparando nossos canais de contato.</strong><small>Nesta demonstração, o formulário prepara uma mensagem para você copiar. Não envia dados a nenhum servidor.</small></span></div></div><form id="contact-form" class="contact-form"><span class="form-title">Conte um pouco sobre seu projeto</span><div class="form-row"><label>Seu nome <input type="text" name="name" placeholder="Como podemos chamar você?" required maxlength="100" /></label><label>Empresa / instituição <input type="text" name="company" placeholder="Nome da organização" maxlength="120" /></label></div><label>Tenho interesse em <select name="interest" required><option value="" disabled selected>Selecione uma opção</option><option>Anunciar na rede Hexmídia</option><option>Instalar ou locar telas</option><option>Ser um estabelecimento parceiro</option><option>Projeto para órgão público</option><option>Outro assunto</option></select></label><label>Sua mensagem <textarea name="message" placeholder="Conte o que você tem em mente..." rows="4" maxlength="1200"></textarea></label><button type="submit" class="button button-primary form-submit">Preparar mensagem <svg><use href="#i-arrow-up"/></svg></button><small class="form-disclaimer">Demonstração: nenhuma mensagem será enviada automaticamente.</small><div id="contact-result" class="contact-result" role="status" aria-live="polite" hidden><strong>Mensagem preparada!</strong><p>Você pode copiar o texto abaixo. O envio para a Hexmídia ainda não está configurado nesta demo.</p><pre id="message-preview"></pre><button type="button" class="copy-button" id="copy-message">Copiar mensagem</button></div></form></div></section>
-  </main>
-
-  <footer class="footer"><div class="container"><div class="footer-top"><div><a href="#inicio" class="brand footer-brand"><span class="brand-icon"><svg><use href="#i-play"/></svg></span><span class="brand-type"><strong>HEX</strong><b>MÍDIA</b></span></a><p>Sua marca em mídia indoor.<br/>Tecnologia que aproxima negócios e pessoas.</p></div><div class="footer-links"><div><span>EXPLORE</span><a href="#sobre">Quem somos</a><a href="#solucoes">Nossas soluções</a><a href="#segmentos">Onde atuamos</a></div><div><span>HEXMÍDIA</span><a href="#institucional">Setor público</a><a href="#identidade">Nossa essência</a><a href="#contato">Contato</a></div></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Hexmídia. Todos os direitos reservados.</span><span>Site demonstrativo • Não representa uma página comercial finalizada.</span><a href="#inicio">Voltar ao topo ↑</a></div></div></footer>
-</body>
+    </footer>
+  </body>
 </html>
